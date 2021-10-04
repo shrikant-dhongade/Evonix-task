@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Carousel Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css">-->
+
+
+
+
+
+    
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+  </head>
+  <body>
+    
+<!--<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid" style="max-width: 81em;">
+      <a class="navbar-brand" href="#">Carousel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>-->
+<div class="banner">
+<header class="mb-auto">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid" style="max-width: 81em;">
+    <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="banner"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown" style="justify-content: end;">
+      <ul class="navbar-nav" style=" font-family: sans-serif;">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Home
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Evonix</a></li>
+            <li><a class="dropdown-item" href="#">Evonix</a></li>
+            <li><a class="dropdown-item" href="#">Evonix</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Evonix</a></li>
+              <li><a class="dropdown-item" href="#">Evonix</a></li>
+              <li><a class="dropdown-item" href="#">Evonix</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Evonix</a></li>
+              <li><a class="dropdown-item" href="#">Evonix</a></li>
+              <li><a class="dropdown-item" href="#">Evonix</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Work
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Contact
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              |
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+
+
+  </div>
+</nav>
+  </header>
+  <!--<img src="./img/banner.png" alt="banner">-->
+<main>
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators" style="bottom: 54px;">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="display: none;"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" style="display: none;"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" style="display: none;"></button>>
+       <img src="./img/downarrow.png" alt="banner">
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777" style="opacity: 0.1;"/></svg>
+        
+        <div class="container">
+          <div class="carousel-caption text-start" style="bottom: 20.25rem;">
+            <h1 class="clrtxt">We make<br> Digital Experiences<br> that Customers Love</h1>
+            <!--<p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>-->
+            <div class="btnhalf"></div>
+           
+          </div>
+        </div>
+      </div>
+      <div class="social_media">
+        <br>
+        <span><img src="./img/facbk.png" alt="banner"></span>
+        <span><img src="./img/twiter.png" alt="banner"></span>
+        <span><img src="./img/linkd.png" alt="banner"></span>
+        <span><img src="./img/yout.png" alt="banner"></span>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777" style="opacity: 0.1;"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-start" style="bottom: 20.25rem;">
+            <h1 class="clrtxt">We make<br> Digital Experiences<br> that Customers Love</h1>
+            <div class="btnhalf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="social_media">
+        <br>
+        <span><img src="./img/facbk.png" alt="banner"></span>
+        <span><img src="./img/twiter.png" alt="banner"></span>
+        <span><img src="./img/linkd.png" alt="banner"></span>
+        <span><img src="./img/yout.png" alt="banner"></span>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777" style="opacity: 0.1;"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-start" style="bottom: 20.25rem;">
+           <h1 class="clrtxt">We make<br> Digital Experiences<br> that Customers Love</h1>
+             <div class="btnhalf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="social_media">
+        <br>
+        <span><img src="./img/facbk.png" alt="banner"></span>
+        <span><img src="./img/twiter.png" alt="banner"></span>
+        <span><img src="./img/linkd.png" alt="banner"></span>
+        <span><img src="./img/yout.png" alt="banner"></span>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev" style="left: 77%;">
+      <span aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+      <img src="./img/arrowleft.png" alt="banner">
+      <span class="middleline"></span>
+    </button>
+  
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+      <img src="./img/arrowleft.png" class="makerightside" alt="banner">
+    </button>
+  </div>
+</div>
+
+<Section class="banner2_sec">
+  <div class="text_benner_2">
+    <h1 class="fontchnage">We are purefire</h1>
+    <span style="color: antiquewhite;font-size: 29px;">. . .</span>
+    <p class="fontchnage1">We create everlasting digital experiences, solutions that are simple, positive & result driven.<br> We make Digital Experiences that Customers Love.</p>
+    <div class="btnhalf"></div>
+  </div>
+</Section>
+
+
+<section style="background:black;">
+  <div class="owl-carousel owl-theme">
+    <div class="item">
+      <img src="./img/carousel2.png" alt="">
+      <div style="padding: 10px 1px;">
+        <h5 style="display: flex;font-family: -webkit-pictograph;color: #ddd;"><img src="./img/search1.png" style="height:auto ;width: 40px;" alt=""> <span style="margin: 5px 10px;">Search Engine Optimization</span></h5>
+        <p style="margin-left: 54px;color: #737070;font-size: 16px;font-weight: 500;">Lorem Ipsum is simply dummy text Ipsum is<br> simply dummy text of the printing and<br> typesetting industry Lorem Ipsum.</p>
+        <img src="./img/sliderarrow.png" style="height:auto ;width: 40px;float: right;" alt="">
+      </div>
+    </div>
+    <div class="item">
+      <img src="./img/carousel3.png" alt="">
+      <div style="padding: 10px 1px;">
+        <h5 style="display: flex;font-family: -webkit-pictograph;color: #ddd;"><img src="./img/search2.png" style="height:auto ;width: 40px;" alt=""> <span style="margin: 5px 10px;">Search Engine Optimization</span></h5>
+        <p style="margin-left: 54px;color: #737070;font-size: 16px;font-weight: 500;">Lorem Ipsum is simply dummy text Ipsum is<br> simply dummy text of the printing and<br> typesetting industry Lorem Ipsum.</p>
+        <img src="./img/sliderarrow.png" style="height:auto ;width: 40px;float: right;" alt="">
+      </div>
+    </div>
+    <div class="item">
+      <img src="./img/carousel1.png" alt="">
+      <div style="padding: 10px 1px;">
+        <h5 style="display: flex;font-family: -webkit-pictograph;color: #ddd;"><img src="./img/search1.png" style="height:auto ;width: 40px;" alt=""> <span style="margin: 5px 10px;">Search Engine Optimization</span></h5>
+        <p style="margin-left: 54px;color: #737070;font-size: 16px;font-weight: 500;">Lorem Ipsum is simply dummy text Ipsum is<br> simply dummy text of the printing and<br> typesetting industry Lorem Ipsum.</p>
+        <img src="./img/sliderarrow.png" style="height:auto ;width: 40px;float: right;" alt="">
+      </div>
+    </div>
+    <div class="item">
+      <img src="./img/carousel2.png" alt="">
+      <div style="padding: 10px 1px;">
+        <h5 style="display: flex;font-family: -webkit-pictograph;color: #ddd;"><img src="./img/search1.png" style="height:auto ;width: 40px;" alt=""> <span style="margin: 5px 10px;">Search Engine Optimization</span></h5>
+        <p style="margin-left: 54px;color: #737070;font-size: 16px;font-weight: 500;">Lorem Ipsum is simply dummy text Ipsum is<br> simply dummy text of the printing and<br> typesetting industry Lorem Ipsum.</p>
+        <img src="./img/sliderarrow.png" style="height:auto ;width: 40px;float: right;" alt="">
+      </div>
+    </div>
+    <div class="item">
+      <img src="./img/carousel3.png" alt="">
+      <div style="padding: 10px 1px;">
+        <h5 style="display: flex;font-family: -webkit-pictograph;color: #ddd;"><img src="./img/search2.png" style="height:auto ;width: 40px;" alt=""> <span style="margin: 5px 10px;">Search Engine Optimization</span></h5>
+        <p style="margin-left: 54px;color: #737070;font-size: 16px;font-weight: 500;">Lorem Ipsum is simply dummy text Ipsum is<br> simply dummy text of the printing and<br> typesetting industry Lorem Ipsum.</p>
+        <img src="./img/sliderarrow.png" style="height:auto ;width: 40px;float: right;" alt="">
+      </div>
+    </div>
+    <div class="item">
+      <img src="./img/carousel1.png" alt="">
+      <div style="padding: 10px 1px;">
+        <h5 style="display: flex;font-family: -webkit-pictograph;color: #ddd;"><img src="./img/search1.png" style="height:auto ;width: 40px;" alt=""> <span style="margin: 5px 10px;">Search Engine Optimization</span></h5>
+        <p style="margin-left: 54px;color: #737070;font-size: 16px;font-weight: 500;">Lorem Ipsum is simply dummy text Ipsum is<br> simply dummy text of the printing and<br> typesetting industry Lorem Ipsum.</p>
+        <img src="./img/sliderarrow.png" style="height:auto ;width: 40px;float: right;" alt="">
+      </div>
+    </div>
+
+
+</div>
+</section>
+
+
+<Section class="banner3_sec">
+  <div class="text_benner_2">
+    <h1 class="fontchnage" style="font-size: 34px;">About <span style="text-decoration: underline;">Agency</span></h1>
+    <span style="color: antiquewhite;font-size: 29px;">. . .</span>
+    <p class="fontchnage">Lorem Ipsum is simply dummy<br> text of the  <span style="text-decoration: underline;">printing.  <img src="./img/sliderarrow.png" style="height:auto ;width: 40px;margin-left: 3rem;" alt=""></span></p>
+    <div class="btnhalf"></div>
+  </div>
+</Section>
+
+
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+ 
+
+
+ 
+</main>
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script>
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    margin:70,
+    autoplay:true,
+    stagePadding:260,
+    autoplayTimeout:2000,
+    responsive:{
+        0:{
+            items:1,
+            stagePadding: 0
+        },
+        600:{
+            items:1,
+            stagePadding: 0
+        },
+        1000:{
+            items:2
+        }
+       
+        
+    }
+})
+</script>
+  </body>
+</html>
